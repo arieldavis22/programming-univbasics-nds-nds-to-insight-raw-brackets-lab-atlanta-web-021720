@@ -24,5 +24,5 @@ def directors_totals(nds)
     result[directors_database[name_index][:name]] = directors_database[name_index][:movies][0][:worldwide_gross]
     name_index += 1
   end
-  p result
+  pp directors_database
 end
