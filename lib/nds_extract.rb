@@ -19,5 +19,10 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  pp directors_database
+  name_index = 0
+  while name_index < directors_database.length do
+    result[directors_database[name_index]] = directors_database[name_index][:movies][0][:worldwide_gross]
+    name_index += 1
+  end
+  result
 end
